@@ -1,14 +1,11 @@
 profile
 
 *.perspective
-server.js
 *.pbxuser
-pruebas.js
 *.perspectivev3
 # xcode noise
 CVS
 xcuserdata
-main.js
 build/*
 *.mode1
 .DS_Store

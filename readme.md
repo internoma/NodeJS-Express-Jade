@@ -10,3 +10,6 @@ Historia:
 
 v0.01a [30-06-2013 12:03 Alfredo Gonzalez P. <alfredo@internoma.com>]
 
+Instalación MongoDB [30-06-2013 22:04]
+
+	
