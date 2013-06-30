@@ -1,0 +1,23 @@
+doctype 5
+html(lang='es-ES')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
+		title= title
+		meta(name='description', content='Content')
+		meta(name='keywords', content='Keywords')
+		link(rel='shortcut icon', href='favicon.ico')
+		link(rel='icon', href='favicon.ico')
+		link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700', rel='stylesheet', type='text/css')
+		link(href='/stylesheets/style.css?v=1', rel='stylesheet', type='text/css')
+	body
+		section#content
+			block content
+		footer
+			block footer
+	
+	script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')
+	script(type='text/javascript', src='/javascripts/scripts.js')
+
+	//if lt IE 9
+		script(type='text/javascript', src='http://html5shiv.googlecode.com/svn/trunk/html5.js')

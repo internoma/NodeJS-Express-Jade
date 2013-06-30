@@ -1,0 +1,12 @@
+{
+  "name": "app-pruebasNodeJS",
+  "version": "0.0.1b",
+  "private": true,
+  "scripts": {
+    "start": "node app-pruebasNodeJS.js"
+  },
+  "dependencies": {
+    "express": "3.3.1",
+    "jade": "*"
+  }
+}
