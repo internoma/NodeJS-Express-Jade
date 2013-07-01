@@ -1,11 +1,12 @@
 body {
   padding: 50px;
-  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-}
-h1 {
-	color: #f08a03;
-}
+  font: 14px Helvetica, Arial, sans-serif; }
+
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
+  a:hover {
+    color: #00668f; }
+
+h1, h2 {
+  font-size: 1.5em;
+  color: orange; }

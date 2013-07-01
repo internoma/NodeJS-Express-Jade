@@ -7,7 +7,8 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , http = require('http')
-  , path = require('path');
+  , path = require('path')
+  , sass = require('node-sass');
 
 var app = express();
 
@@ -15,6 +16,12 @@ var app = express();
 app.set('port', process.env.PORT || 8888);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
+app.use(sass.middleware({
+	src: __dirname + '/views/sass', //where the sass files are 
+	dest: __dirname + '/public', //where css should go
+	debug: true, // obvious
+	outputStyle: 'nested' // 'nested', 'expanded', 'compact', 'compressed'
+}));
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());

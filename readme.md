@@ -11,5 +11,8 @@ Historia:
 v0.01a [30-06-2013 12:03 Alfredo Gonzalez P. <alfredo@internoma.com>]
 
 Instalación MongoDB [30-06-2013 22:04]
+Instalación Supervisor [01-07-2013 01:06]
+Instalación node-sass [01-07-2013 02:35]
 
+	
 	
