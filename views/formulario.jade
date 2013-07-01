@@ -3,9 +3,9 @@ extends layout
 block content
 	h1= title
 	p Bienvenido a la aplicación #{title}
-	p Aquí irá el 
-		b bloque de contenido 
-		| de la otra página, así tenemos multipágina.
+	p Aquí irá el formulario: 
+	form(action='respuesta',method='post')
+		input(type='text', name='palabra', placeholder='Buscar')
 	p Esto es un 
 		a(href='/') enlace al indice.
 	p Pruebas con  

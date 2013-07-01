@@ -24,3 +24,22 @@ exports.pagina = function(req, res){
   	version : $version
   });
 };
+
+exports.formulario = function(req, res){
+  res.render('formulario', {
+    title   : 'Pruebas de formularios con Express',
+    autor   : $autor,
+    date    : $date,
+    version : $version
+  });
+};
+
+exports.respuesta = function(req, res){
+  res.render('respuesta', {
+    title   : 'Prueba de respuesta a formularios con Express',
+    autor   : $autor,
+    date    : $date,
+    version : $version,
+    palabra : req.body.palabra
+  });
+};

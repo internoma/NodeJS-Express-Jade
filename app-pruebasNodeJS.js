@@ -20,6 +20,7 @@ app.use(sass.middleware({
 	src: __dirname + '/views/sass', //where the sass files are 
 	dest: __dirname + '/public', //where css should go
 	debug: true, // obvious
+  includePaths: [ 'lib/'], // paths in @include sass directives
 	outputStyle: 'nested' // 'nested', 'expanded', 'compact', 'compressed'
 }));
 app.use(express.favicon());
@@ -36,6 +37,8 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/pagina', routes.pagina);
+app.get('/formulario', routes.formulario);
+app.post('/respuesta', routes.respuesta);
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
